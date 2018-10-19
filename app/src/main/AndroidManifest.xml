@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alesn.ipbbtegalard">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_kab_tegal"
+        android:label="PBB Kab. Tegal"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpptActivity"
+            android:label="Cek SPPT"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PermohonanActivity"
+            android:label="Cek Permohonan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".InfolayananActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CarabayarActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TempatbayarActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".InfokontakActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity
+            android:name=".KecamatanActivity"
+            android:parentActivityName=".DashboardActivity"
+            android:label="PBB Kecamatan"/>
+        <activity android:name=".KelurahanActivity" android:parentActivityName=".DashboardActivity"
+            android:label="PBB Kelurahan"/>
+        <activity android:name=".RankingActivity" android:parentActivityName=".DashboardActivity"
+            android:label="PBB Ranking"/>
+        <activity android:name=".RealisasiActivity" android:parentActivityName=".DashboardActivity"
+            android:label="Realisasi"/>
+        <activity android:name=".PajakActivity" android:parentActivityName=".DashboardActivity"
+            android:label="Pajak Self Assesment"/>
+        <activity android:name=".CekspptActivity" android:parentActivityName=".DashboardActivity"
+            android:label="Cek SPPT"/>
+        <activity android:name=".TargetActivity" android:parentActivityName=".DashboardActivity"
+            android:label="PBB Target"></activity>
+    </application>
+
+</manifest>
