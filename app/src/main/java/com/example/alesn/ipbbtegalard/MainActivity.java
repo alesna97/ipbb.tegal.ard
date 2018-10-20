@@ -9,7 +9,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private CardView btn_sppt,btn_permohonan,btn_daftaronline,btn_login,btn_pembayaran;
+    private CardView btn_sppt,btn_permohonan,btn_login,btn_pembayaran;
     private CardView btn_keluar,btn_info_kontak,btn_carabayar,btn_infolayanan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // CARDVIEW
         btn_sppt = (CardView) findViewById(R.id.btn_sppt);
         btn_permohonan = (CardView) findViewById(R.id.btn_permohonan);
-        btn_daftaronline = (CardView) findViewById(R.id.btn_daftaronline);
         btn_login = (CardView) findViewById(R.id.btn_login);
         btn_pembayaran = (CardView) findViewById(R.id.btn_pembayaran);
         btn_keluar = (CardView) findViewById(R.id.btn_keluar);
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //ADD CLICKLISTENER
         btn_sppt.setOnClickListener(this);
         btn_permohonan.setOnClickListener(this);
-        btn_daftaronline.setOnClickListener(this);
         btn_login.setOnClickListener(this);
         btn_pembayaran.setOnClickListener(this);
         btn_keluar.setOnClickListener(this);
@@ -44,8 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.btn_sppt : i = new Intent(this,SpptActivity.class);startActivity(i); break;
             case R.id.btn_permohonan : i = new Intent(this,PermohonanActivity.class); startActivity(i);break;
-            case R.id.btn_daftaronline : i = new Intent(this,MainActivity.class); startActivity(i);break;
-            case R.id.btn_login : i = new Intent(this,LoginActivity.class); startActivity(i);break;
+            case R.id.btn_login : i = new Intent(this,LoginActivity.class);startActivity(i);break;
             case R.id.btn_pembayaran : i = new Intent(this,TempatbayarActivity.class);startActivity(i); break;
             case R.id.btn_keluar : onBackPressed();break;
             case R.id.btn_infokontak : i = new Intent(this,InfokontakActivity.class); startActivity(i);break;

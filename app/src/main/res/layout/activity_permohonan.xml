@@ -1,94 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PermohonanActivity"
-    android:orientation="vertical">
+    >
 
-    <android.support.v7.widget.CardView
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:layout_width="match_parent"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="6dp"
-        android:layout_margin="10dp"
-        app:cardBackgroundColor="@color/colorPrimary">
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_margin="16dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No Pelayanan : "
-                android:textSize="22sp"
-                android:textColor="@color/white"/>
-            <EditText
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/tx_pelayanan"
-                android:hint="  Masukan Nomor Pelayanan"
-                android:background="@color/white"
-                />
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No SPPT : "
-                android:textSize="22sp"
-                android:textColor="@color/white"/>
-            <EditText
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/tx_sppt"
-                android:hint="  Masukan Nomor NOP"
-                android:background="@color/white"
-                />
-            <Button
-                android:id="@+id/btn_cari"
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="CARI"
-                android:background="@drawable/bg_button"
-                android:textColor="@color/white"/>
-
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:layout_height="200dp"
-        android:layout_width="match_parent"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="6dp"
-        android:layout_margin="10dp"
-        android:id="@+id/cardview_obj_pajak_permohonan">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_margin="16dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Object Pajak : "
-                android:textSize="22sp"
-                android:textColor="#000000"/>
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorPrimary">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:id="@+id/obj_pajak_content_permohonan">
+                android:layout_margin="16dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Pelayanan : "
+                    android:textSize="22sp"
+                    android:textColor="@color/white"/>
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tx_pelayanan"
+                    android:paddingLeft="10dp"
+                    android:hint="  Masukan Nomor Pelayanan"
+                    android:background="@color/white"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No SPPT : "
+                    android:textSize="22sp"
+                    android:textColor="@color/white"/>
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tx_sppt"
+                    android:hint="  Masukan Nomor NOP"
+                    android:background="@color/white"
+                    />
+                <Button
+                    android:id="@+id/btn_cari"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CARI"
+                    android:background="@drawable/bg_button"
+                    android:textColor="@color/white"/>
 
             </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/buttonPressed">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_warning"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   PERHATIAN !"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+                </LinearLayout>
 
-</LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\nPastikan Nomor Objek Pajak (NOP) yang Anda masukan benar. jika data tidak muncul, silahkan konfirmasi ke BP2D Kab.Tegal pada jam kerja."
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:layout_margin="10dp"
+            android:id="@+id/cardview_obj_pajak_permohonan">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Object Pajak : "
+                    android:textSize="22sp"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/obj_pajak_content_permohonan">
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

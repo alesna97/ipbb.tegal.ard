@@ -41,96 +41,146 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="200dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-                <TextView
-                    android:layout_marginTop="70dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text=" A. Mengisi form spop/dan membawa : "/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1. Fotocopy KTP , KK"
-                    android:layout_marginTop="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2. Salah satu bukti surat tanah :"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="a. Sertifikat"
-                    android:layout_marginLeft="16dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="b. Surat Kapling"
-                    android:layout_marginLeft="16dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="c. SIPPT"
-                    android:layout_marginLeft="16dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="d. Akta Jual beli/Hibah/Waris"
-                    android:layout_marginLeft="16dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="e. Surat Tanah Garapan"
-                    android:layout_marginLeft="16dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="f. Surat perjanjian sewa menyewa"
-                    android:layout_marginLeft="16dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="g. Dokumen lainya"
-                    android:layout_marginLeft="16dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" 3. Surat Keterangan Kepala Desa/Lurah "
-                    android:layout_gravity="center"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" 4. Fotocopy SPPT Tetangga sekitar\n     yang berbatasan langsung "
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5. Fotocopy salah satu bukti bangunan"
-                    android:layout_gravity="center"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="a. IMB"
-                    android:layout_marginLeft="16dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="b. IPB"
-                    android:layout_marginLeft="16dp"/>
+                android:layout_width="match_parent"
+                app:cardElevation="6dp"
+                android:layout_margin="10dp"
+                android:foreground="?android:attr/selectableItemBackground">
 
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:padding="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. Mengisi form spop/dan membawa : "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. Fotocopy KTP , KK"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. Salah satu bukti surat tanah :"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a. Sertifikat"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="b. Surat Kapling"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="c. SIPPT"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="d. Akta Jual beli/Hibah/Waris"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="e. Surat Tanah Garapan"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="f. Surat perjanjian sewa menyewa"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="g. Dokumen lainya"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 3. Surat Keterangan Kepala Desa/Lurah "
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 4. Fotocopy SPPT Tetangga sekitar\n     yang berbatasan langsung "
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. Fotocopy salah satu bukti bangunan"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a. IMB"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="b. IPB"
+                        android:layout_marginLeft="16dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:cardElevation="6dp"
+                android:layout_margin="10dp"
+                android:foreground="?android:attr/selectableItemBackground">
+                <include layout="@layout/pengertian_layout"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:cardElevation="6dp"
+                android:layout_margin="10dp"
+                android:foreground="?android:attr/selectableItemBackground">
+                <include layout="@layout/objekpajak_layout"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:cardElevation="6dp"
+                android:layout_margin="10dp"
+                android:foreground="?android:attr/selectableItemBackground">
+                <include layout="@layout/pengecualian_layout"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:cardElevation="6dp"
+                android:layout_margin="10dp"
+                android:foreground="?android:attr/selectableItemBackground">
+                <include layout="@layout/njop_layout"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:cardElevation="6dp"
+                android:layout_margin="10dp"
+                android:foreground="?android:attr/selectableItemBackground">
+                <include layout="@layout/subjek_layout"/>
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
     </ScrollView>
-
 </android.support.constraint.ConstraintLayout>

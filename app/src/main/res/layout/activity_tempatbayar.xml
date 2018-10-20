@@ -45,50 +45,88 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp">
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/ic_bankjateng"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Seluruh ATM dan Kantor -kantor cabang BPD Jateng"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        />
-                    <ImageView
-                        android:layout_marginTop="10dp"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:background="@drawable/ic_logo_kab_tegal"
-                        android:layout_gravity="center"/>
-                    <TextView
-                        android:layout_marginTop="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rumah Paten Masing-masing Kecamatan Kab. Tegal"
-                        android:layout_gravity="center"
-                        />
-                <ImageView
-                    android:layout_marginTop="10dp"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/ic_arindo"
-                    android:layout_gravity="center"/>
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Loket - loket PT. Arindo Pratama seluruh Indonesia"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="20dp"
-                    />
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    app:cardElevation="6dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_bankjateng"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seluruh ATM dan Kantor -kantor cabang BPD Jateng"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    app:cardElevation="6dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/ic_logo_kab_tegal"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rumah Paten Masing-masing Kecamatan Kab. Tegal"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    app:cardElevation="6dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/ic_arindo"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loket - loket PT. Arindo Pratama seluruh Indonesia"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
             </LinearLayout>
 
         </LinearLayout>

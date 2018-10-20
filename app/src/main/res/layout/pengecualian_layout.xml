@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Pengecualian Objek Pajak PBB P2 "/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Objek Pajak yang tidak dikenakan Pajak Bumi dan Bangunan Perdesaan dan Perkotaan adalah objek pajak yang :\n
+1. Digunakan oleh Pemerintah dan Daerah untuk penyelenggaraan pemerintahan;
+\n2. Digunakan semata-mata untuk melayani kepentingan umum di bidang ibadah, sosial, kesehatan, pendidikan dan kebudayaan nasional, yang tidak dimaksudkan untuk memperoleh keuntungan;
+\n3. Digunakan untuk kuburan, peninggalan purbakala, atau yang sejenis dengan itu;
+\n4. Merupakan hutan lindung, hutan suaka alam, hutan wisata, taman nasional, tanah penggembalaan yang dikuasai oleh desa, dan tanah negara yang belum dibebani suatu hak;
+\n5. Digunakan oleh perwakilan diplomatik dan konsulat berdasarkan asas perlakuan timbal balik; dan
+6. Digunakan oleh badan atau perwakilan lembaga internasional yang ditetapkan dengan Peraturan Menteri Keuangan."
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</LinearLayout>
